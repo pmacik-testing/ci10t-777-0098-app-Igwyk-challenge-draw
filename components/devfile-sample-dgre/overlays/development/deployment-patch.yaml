@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-dgre
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/ci10t-777-0098-tenant/ci10t-777-0098-app/devfile-sample-dgre@sha256:14b7f64dcc6ea4a040238fd6a9bed740e5c6a6283d3144701c8820a61bd46f6f
+        name: my-nodejs
+        resources: {}
+status: {}
